@@ -97,16 +97,16 @@ function Chats(props) {
           text: i.message,
           user: {
             _id: i.senderId,
-            avatar: 'https://placeimg.com/140/140/any'
+            avatar: 'https://placeimg.com/140/140/people'
           }
         }
 
         console.log("copy data ", data)
         mData.push(data)
-      },3000)
+      },300)
     
       setMessages(mData.reverse());
-    }, 5000)
+    }, 500)
 
     // console.log("new props @@@@@@@@@@ ", props.conversation.conversation)
     // props.conversation.conversation.map(i => console.log(i))
